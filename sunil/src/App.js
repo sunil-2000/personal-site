@@ -5,8 +5,8 @@ class App extends Component {
   render() {
     return (
       <>
-        {/* <About></About> */}
         <Background></Background>
+        <About></About>
       </>
     );
   }

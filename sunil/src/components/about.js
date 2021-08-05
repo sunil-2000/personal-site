@@ -27,11 +27,13 @@ class About extends Component {
           width={500}
           height={500}
         /> */}
-        <div className={classes.intro}>Sunil Sabnis</div>
-        <ReactRotatingText
-          className={classes.rotateText}
-          items={this.state.titles}
-        />
+        <div className={classes.introContainer}>
+          <div className={classes.intro}>Sunil Sabnis</div>
+          <ReactRotatingText
+            className={classes.rotateText}
+            items={this.state.titles}
+          />
+        </div>
         <Container className={classes.cardContainer} fluid>
           <Row>
             <Col md={7}>

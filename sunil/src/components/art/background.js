@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import * as THREE from "three";
+import classes from "../../styles/background.module.css";
 
 class Background extends Component {
   componentDidMount() {
@@ -16,21 +17,40 @@ class Background extends Component {
 
     this.mount.appendChild(renderer.domElement);
 
-    let geometry = new THREE.PlaneGeometry(1, 1, 1);
-    let material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    let cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-    camera.position.z = 5;
+    var geometry = new THREE.PlaneGeometry(22, 8, 70, 50);
+
+    var material = new THREE.MeshBasicMaterial({
+      color: "white",
+      wireframe: true,
+    });
+    var wave = new THREE.Mesh(geometry, material);
+    scene.add(wave);
+    camera.position.z = 3;
+    wave.rotation.set(-0.8, -0.3, 1);
+
+    const clock = new THREE.Clock();
+
     const animate = () => {
+      const time = clock.getElapsedTime();
+      let points = wave.geometry.attributes.position;
+      const length = points.count * 3;
+
+      for (let x = 0; x < length; x = x + 3) {
+        const sinWaveZ1 = 0.5 * Math.sin(2 * points.array[x] + time);
+        const sinWaveZ2 = 0.25 * Math.sin(3 * points.array[x] + time * 2);
+        // const waveY = 0.5 * Math.sin(points.array[x + 1] + time);
+        points.array[x + 2] = sinWaveZ1;
+      }
+      wave.geometry.attributes.position.needsUpdate = true;
       requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
       renderer.render(scene, camera);
     };
     animate();
   }
   render() {
-    return <div ref={(ref) => (this.mount = ref)} />;
+    return (
+      <div className={classes.background} ref={(ref) => (this.mount = ref)} />
+    );
   }
 }
 export default Background;

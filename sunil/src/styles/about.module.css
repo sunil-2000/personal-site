@@ -2,19 +2,26 @@
 .intro {
   text-align: center;
   font-family: "Exo", sans-serif;
-  font-size: 3em;
-  margin: 1em;
+  font-size: 10em;
+  padding-top: 0.9em;
 }
 .rotateText {
   display: flex;
   justify-content: center;
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 3.5em;
 }
 
 .container {
   width: 100%;
   margin: auto;
+}
+
+.introContainer {
+  margin: 11em;
+  margin-top: 0;
+  padding-top: 0.2em;
+  padding-bottom: 2em;
 }
 
 .icon {
