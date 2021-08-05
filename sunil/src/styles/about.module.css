@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;400&display=swap");
+.intro {
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  font-size: 3em;
+  margin: 1em;
+}
+.rotateText {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.icon {
+  margin: auto;
+  margin-top: 3em;
+  display: block;
+  justify-content: center;
+}
+
+.card {
+  width: 15rem;
+  justify-content: flex-end;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+.cardContainer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}

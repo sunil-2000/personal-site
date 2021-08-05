@@ -1,0 +1,7 @@
+.square {
+  background: lemonchiffon;
+  width: 4px;
+  height: 4px;
+  border-radius: 1em;
+  align-items: center;
+}

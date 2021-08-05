@@ -1,0 +1,12 @@
+.card {
+  width: 40rem;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  font-size: 2rem;
+}
