@@ -5,6 +5,8 @@ import { Row, Card, Col, Container } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import selfImage from "../intro.jpg";
 import Projects from "./projects";
+import ProjectCol from "./projectCol";
+import flappyImage from "../flappycaml.gif";
 
 class About extends Component {
   constructor(props) {
@@ -53,6 +55,15 @@ class About extends Component {
                   </Card.Text>
                 </Card.Body>
               </Card>
+              <ProjectCol
+                image={flappyImage}
+                link='dummy.com'
+                title='Flappy Caml'
+                description='A fun spin-off of flappy bird with more game
+                features. The game was developed following functional
+                programming principals with Ocaml.'
+                iconList={[{ code: "cib:ocaml", name: "ocaml" }]}
+              ></ProjectCol>
             </Col>
           </Row>
         </Container>

@@ -14,10 +14,9 @@ class Background extends Component {
     );
     let renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-
     this.mount.appendChild(renderer.domElement);
 
-    var geometry = new THREE.PlaneGeometry(22, 8, 70, 50);
+    var geometry = new THREE.PlaneGeometry(22, 8, 120, 80);
 
     var material = new THREE.MeshBasicMaterial({
       color: "white",
@@ -30,13 +29,28 @@ class Background extends Component {
 
     const clock = new THREE.Clock();
 
+    function resizeCanvasToDisplaySize() {
+      const canvas = renderer.domElement;
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      if (canvas.width !== width || canvas.height !== height) {
+        // you must pass false here or three.js sadly fights the browser
+        renderer.setSize(width, height, false);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+
+        // set render target sizes here
+      }
+    }
+
     const animate = () => {
+      resizeCanvasToDisplaySize();
       const time = clock.getElapsedTime();
       let points = wave.geometry.attributes.position;
       const length = points.count * 3;
 
       for (let x = 0; x < length; x = x + 3) {
-        const sinWaveZ1 = 0.5 * Math.sin(2 * points.array[x] + time);
+        const sinWaveZ1 = 0.3 * Math.sin(2 * points.array[x] + time);
         const sinWaveZ2 = 0.25 * Math.sin(3 * points.array[x] + time * 2);
         // const waveY = 0.5 * Math.sin(points.array[x + 1] + time);
         points.array[x + 2] = sinWaveZ1;

@@ -10,6 +10,7 @@
   justify-content: center;
   font-family: monospace;
   font-size: 3.5em;
+  margin-bottom: 1em;
 }
 
 .container {
@@ -17,22 +18,8 @@
   margin: auto;
 }
 
-.introContainer {
-  margin: 11em;
-  margin-top: 0;
-  padding-top: 0.2em;
-  padding-bottom: 2em;
-}
-
-.icon {
-  margin: auto;
-  margin-top: 3em;
-  display: block;
-  justify-content: center;
-}
-
 .card {
-  width: 15rem;
+  width: 20rem;
   justify-content: flex-end;
   margin-left: 10rem;
   margin-top: 2rem;
@@ -42,4 +29,5 @@
   width: 100%;
   max-width: 100%;
   min-width: 100%;
+  background: white;
 }
