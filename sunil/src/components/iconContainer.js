@@ -12,6 +12,7 @@ class IconContainer extends Component {
         overlay={toolTip}
       >
         <Icon
+          inline={true}
           style={
             this.props.large
               ? { fontSize: "4em", margin: "0.5em" }

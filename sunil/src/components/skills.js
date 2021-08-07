@@ -21,26 +21,24 @@ class Skills extends Component {
   }
   render() {
     return (
-      <div className={classes.container}>
+      <section className={classes.container}>
         <h3 className={classes.header}>Skills</h3>
-        <div className={classes.IconContainer}>
-          <div className={classes.innerIconContainer}>
-            {this.renderIcons([
-              { code: "cib:javascript", name: "Javascript" },
-              { code: "cib:java", name: "Java" },
-              { code: "cib:python", name: "python" },
-              { code: "cib:ocaml", name: "Ocaml" },
-              { code: "cib:r", name: "R" },
-              { code: "simple-icons:pandas", name: "Pandas" },
-              { code: "simple-icons:jupyter", name: "Jupyter Notebooks" },
-              { code: "cib:kubernetes", name: "kubernetes" },
-              { code: "cib:react", name: "react" },
-              { code: "cib:redux", name: "redux" },
-              { code: "cib:postgresql", name: "Postgresql" },
-            ])}
-          </div>
+        <div>
+          {this.renderIcons([
+            { code: "cib:javascript", name: "Javascript" },
+            { code: "cib:java", name: "Java" },
+            { code: "cib:python", name: "python" },
+            { code: "cib:ocaml", name: "Ocaml" },
+            { code: "cib:r", name: "R" },
+            { code: "simple-icons:pandas", name: "Pandas" },
+            { code: "simple-icons:jupyter", name: "Jupyter Notebooks" },
+            { code: "cib:kubernetes", name: "kubernetes" },
+            { code: "cib:react", name: "react" },
+            { code: "cib:redux", name: "redux" },
+            { code: "cib:postgresql", name: "Postgresql" },
+          ])}
         </div>
-      </div>
+      </section>
     );
   }
 }

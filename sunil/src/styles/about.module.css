@@ -43,6 +43,7 @@
   max-width: 100%;
   min-width: 100%;
   background: white;
+  background-color: white;
 }
 
 @media only screen and (max-device-width: 600px) {
