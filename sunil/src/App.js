@@ -11,9 +11,6 @@ class App extends Component {
         <About></About>
         <Skills></Skills>
         <Experience></Experience>
-        <section>
-          <div>Hello World</div>
-        </section>
       </>
     );
   }
