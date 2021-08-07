@@ -12,7 +12,11 @@ class IconContainer extends Component {
         overlay={toolTip}
       >
         <Icon
-          style={{ fontSize: "2em" }}
+          style={
+            this.props.large
+              ? { fontSize: "4em", margin: "0.5em" }
+              : { fontSize: "2em" }
+          }
           className={classes.icon}
           icon={this.props.code}
         />

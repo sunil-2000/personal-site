@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;400&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  margin-top: 1rem;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+}
+.Iconcontainer {
+  text-align: center;
+}
+
+.innerIconContainer {
+  display: inline-block;
+}
