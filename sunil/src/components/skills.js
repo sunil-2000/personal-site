@@ -23,7 +23,7 @@ class Skills extends Component {
     return (
       <div className={classes.container}>
         <h3 className={classes.header}>Skills</h3>
-        <div classname={classes.IconContainer}>
+        <div className={classes.IconContainer}>
           <div className={classes.innerIconContainer}>
             {this.renderIcons([
               { code: "cib:javascript", name: "Javascript" },

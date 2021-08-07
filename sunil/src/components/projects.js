@@ -14,21 +14,6 @@ class Projects extends Component {
           <ProjectRow
             image={policeImage}
             link='https://sunil-2000.github.io/PoliceKillingDataVis/'
-            title='Police Visualization'
-            description='The past year has been a major wake up call for America in terms of
-            police brutality. With this project the goal was to create a
-            powerful visualization to further expose this crisis and educate
-            others on police violence.'
-            iconList={[
-              { code: "cib:d3-js", name: "d3.js" },
-              { code: "cib:javascript", name: "Javascript" },
-              { code: "cib:html5", name: "HTML5" },
-              { code: "cib:css3", name: "CSS3" },
-            ]}
-          ></ProjectRow>
-          <ProjectRow
-            image={policeImage}
-            link='https://sunil-2000.github.io/PoliceKillingDataVis/'
             title='boolpln'
             description='Developed a full stack app from scratch to make planning
             easier and fun with friends. The project was implemented with a react
@@ -47,6 +32,21 @@ class Projects extends Component {
               { code: "cib:django", name: "django" },
               { code: "cib:python", name: "python" },
               { code: "cib:postgresql", name: "postgres" },
+            ]}
+          ></ProjectRow>
+          <ProjectRow
+            image={policeImage}
+            link='https://sunil-2000.github.io/PoliceKillingDataVis/'
+            title='Police Visualization'
+            description='The past year has been a major wake up call for America in terms of
+            police brutality. With this project the goal was to create a
+            powerful visualization to further expose this crisis and educate
+            others on police violence.'
+            iconList={[
+              { code: "cib:d3-js", name: "d3.js" },
+              { code: "cib:javascript", name: "Javascript" },
+              { code: "cib:html5", name: "HTML5" },
+              { code: "cib:css3", name: "CSS3" },
             ]}
           ></ProjectRow>
         </div>

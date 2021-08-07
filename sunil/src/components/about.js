@@ -12,12 +12,7 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      titles: [
-        "Student",
-        "Builder",
-        "Problem Solver",
-        "Software Engineer Intern",
-      ],
+      titles: ["Student", "Builder", "Problem Solver", "Software Engineer"],
     };
   }
   render() {
@@ -31,6 +26,18 @@ class About extends Component {
         /> */}
         <div className={classes.introContainer}>
           <div className={classes.intro}>Sunil Sabnis</div>
+          <Icon
+            className={classes.linkedin}
+            icon='cib:linkedin'
+            onClick={() =>
+              window
+                .open(
+                  "https://www.linkedin.com/in/sunil-sabnis-5b5b441aa/",
+                  "_blank"
+                )
+                .focus()
+            }
+          ></Icon>
           <ReactRotatingText
             className={classes.rotateText}
             items={this.state.titles}
@@ -57,7 +64,7 @@ class About extends Component {
               </Card>
               <ProjectCol
                 image={flappyImage}
-                link='dummy.com'
+                link='https://github.com/sunil-2000/FlappyCaml'
                 title='Flappy Caml'
                 description='A fun spin-off of flappy bird with more game
                 features. The game was developed following functional

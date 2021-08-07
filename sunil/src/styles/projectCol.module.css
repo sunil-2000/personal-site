@@ -25,3 +25,9 @@
   width: 100%;
   flex-direction: row;
 }
+
+@media only screen and (max-device-width: 600px) {
+  .colCard {
+    width: 20rem;
+  }
+}
