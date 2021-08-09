@@ -17,7 +17,7 @@ class Projects extends Component {
             title='boolpln.io'
             description='Developed a full stack app from scratch to make casual planning
             easier and fun with friends. Especially among college students, planning can sometimes feel like
-            a complicated and dreaded task. boolpln.io is directly at solving this problem; users can create
+            a complicated and dreaded task. boolpln.io is directly aimed at solving this problem; users can create
             groups and simply click on timeslots that are available, and view the timeslots that other group
             members have selected. Sign up and start inviting friends to boolpln!'
             iconList={[
