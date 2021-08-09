@@ -16,13 +16,10 @@ class Projects extends Component {
             link='https://boolpln.io'
             title='boolpln.io'
             description='Developed a full stack app from scratch to make casual planning
-            easier and fun with friends. The app solves this problem that is especially prevalent among
-            college students. The project was implemented with a react
-            frontend that leverages redux, bootstrap, and axios libraries. The backend
-            was created with the django framework, where calendar, group and user models along
-            with JWT security authentication, the necessary views and endpoints
-            were designed and coded. Data is stored in a postgresql database.
-            Sign up and start inviting friends to boolpln!'
+            easier and fun with friends. Especially among college students, planning can sometimes feel like
+            a complicated and dreaded task. boolpln.io is directly at solving this problem; users can create
+            groups and simply click on timeslots that are available, and view the timeslots that other group
+            members have selected. Sign up and start inviting friends to boolpln!'
             iconList={[
               { code: "cib:react", name: "react" },
               { code: "cib:redux", name: "redux" },
