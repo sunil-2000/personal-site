@@ -31,7 +31,7 @@ class Internship extends Component {
               { code: "simple-icons:nutanix", name: "Nutanix" },
             ])}
           </div>
-          <div>{this.props.description}</div>
+          <div className={classes.description}>{this.props.description}</div>
           <h5>
             <strong>Technologies Used:</strong>
           </h5>

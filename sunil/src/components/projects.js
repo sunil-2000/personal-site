@@ -1,7 +1,7 @@
 import { Component } from "react";
 import classes from "../styles/projects.module.css";
 import ProjectRow from "./projectRow";
-
+import boolPlnImage from "../boolpln.png";
 // police data vis proj imports
 import policeImage from "../police_data_vis.png";
 
@@ -12,11 +12,12 @@ class Projects extends Component {
         <div className={classes.title}>Projects</div>
         <div className={classes.cardContainer}>
           <ProjectRow
-            image={policeImage}
-            link='https://sunil-2000.github.io/PoliceKillingDataVis/'
-            title='boolpln'
-            description='Developed a full stack app from scratch to make planning
-            easier and fun with friends. The project was implemented with a react
+            image={boolPlnImage}
+            link='https://boolpln.io'
+            title='boolpln.io'
+            description='Developed a full stack app from scratch to make casual planning
+            easier and fun with friends. The app solves this problem that is especially prevalent among
+            college students. The project was implemented with a react
             frontend that leverages redux, bootstrap, and axios libraries. The backend
             was created with the django framework, where calendar, group and user models along
             with JWT security authentication, the necessary views and endpoints

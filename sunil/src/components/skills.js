@@ -25,17 +25,17 @@ class Skills extends Component {
         <h3 className={classes.header}>Skills</h3>
         <div>
           {this.renderIcons([
-            { code: "cib:javascript", name: "Javascript" },
-            { code: "cib:java", name: "Java" },
+            { code: "cib:javascript", name: "javascript" },
+            { code: "cib:java", name: "java" },
             { code: "cib:python", name: "python" },
-            { code: "cib:ocaml", name: "Ocaml" },
-            { code: "cib:r", name: "R" },
-            { code: "simple-icons:pandas", name: "Pandas" },
-            { code: "simple-icons:jupyter", name: "Jupyter Notebooks" },
+            { code: "cib:ocaml", name: "ocaml" },
+            { code: "cib:r", name: "r" },
+            { code: "simple-icons:pandas", name: "pandas" },
+            { code: "simple-icons:jupyter", name: "jupyter notebooks" },
             { code: "cib:kubernetes", name: "kubernetes" },
             { code: "cib:react", name: "react" },
             { code: "cib:redux", name: "redux" },
-            { code: "cib:postgresql", name: "Postgresql" },
+            { code: "cib:postgresql", name: "postgres" },
           ])}
         </div>
       </section>
