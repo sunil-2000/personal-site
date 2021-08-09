@@ -32,7 +32,6 @@ class Skills extends Component {
             { code: "cib:r", name: "r" },
             { code: "simple-icons:pandas", name: "pandas" },
             { code: "simple-icons:jupyter", name: "jupyter notebooks" },
-            { code: "cib:kubernetes", name: "kubernetes" },
             { code: "cib:react", name: "react" },
             { code: "cib:redux", name: "redux" },
             { code: "cib:postgresql", name: "postgres" },
