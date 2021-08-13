@@ -12,7 +12,7 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      titles: ["Student", "Builder", "Problem Solver", "Software Engineer"],
+      titles: ["Student", "Builder", "Researcher", "Software Engineer"],
     };
   }
   render() {
@@ -56,9 +56,16 @@ class About extends Component {
                 <Card.Body>
                   <Card.Title>Hello!</Card.Title>
                   <Card.Text>
-                    👋 I'm Sunil. I am a senior at Cornell University with
-                    interests in web & app development, data science, and
-                    software engineering.
+                    I'm Sunil. I am a senior at Cornell University, pursuing a
+                    Bachelor of Science in Information Science with
+                    concentrations in data science & interactive technologies. I
+                    am currently involved with the{" "}
+                    <a href='https://learning.cis.cornell.edu/'>
+                      Future of Learning Lab
+                    </a>{" "}
+                    where I conduct research focused on educational data science
+                    & learning analytics. I have interests that span from data
+                    science for social good to cloud computing.
                   </Card.Text>
                 </Card.Body>
               </Card>

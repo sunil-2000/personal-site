@@ -8,7 +8,7 @@ class Experience extends Component {
       <>
         <section className={classes.container}>
           <Background></Background>
-          <h1 className={classes.header}>Experience</h1>
+          <h1 className={classes.header}>Work Experience</h1>
           <Internship
             title='Software Engineer Intern @ Nutanix'
             description="During the internship I worked closely with the
