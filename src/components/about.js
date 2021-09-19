@@ -56,7 +56,7 @@ class About extends Component {
                 <Card.Body>
                   <Card.Title>Hello!</Card.Title>
                   <Card.Text>
-                    I'm Sunil. I am a senior at Cornell University, pursuing a
+                    I'm Sunil. I am a student at Cornell University, pursuing a
                     Bachelor of Science in Information Science with
                     concentrations in data science & interactive technologies. I
                     am currently involved with the{" "}
